@@ -1,2 +1,2 @@
-# autovoc
-Auto Voc plugin for WTPBot
+# auto-emoji
+Auto-Emoji plugin for WTPBot
