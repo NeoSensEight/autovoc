@@ -55,7 +55,7 @@ async function createNewVoiceChannel(newstate){
         type : ChannelType.GuildVoice,
         parent : newstate.parent,
         userLimit : default_userlimit,
-        position : 0,
+        position : 99,
     })
     .catch(console.error);
     newstate.member.voice.setChannel(createdChan)

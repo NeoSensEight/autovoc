@@ -83,7 +83,6 @@ async function execute(interaction, client) {
         url: embed_author_url 
     })
     .setTitle(`Configuration d'un salon vocal`)
-    .setThumbnail(embed_thumbnail)
     .setDescription(embed_text)
     .setFooter({
         text: embed_footer_text,

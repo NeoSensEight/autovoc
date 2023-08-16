@@ -1,5 +1,5 @@
 exports.color_embed = 0x0099FF;
-exports.plugin_auteur = 'NeoSensEight';
+exports.plugin_author = 'NeoSensEight';
 
 
 /**
