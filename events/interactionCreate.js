@@ -20,7 +20,7 @@ const { autovocChangeName, autovocChangeLimit, autovocReject, autovocPermit, aut
  */
 function execute(interaction, client) {
     if(voiceChannel.get(interaction.channelId)===undefined || voiceChannel.get(interaction.channelId)===null) return;
-    if(!(voiceChannel.get(interaction.channelId).ownerId == interaction.member.id)) return;
+    if(voiceChannel.get(interaction.channelId).ownerId !== interaction.member.id) return;
     if (interaction.type === InteractionType.MessageComponent) {
         if (interaction.values[0] === "autovoc_nom") {
             autovocChangeName(interaction, client);
