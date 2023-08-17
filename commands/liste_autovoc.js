@@ -33,7 +33,7 @@ const slashCommand = new SlashCommandBuilder()
  */
 async function execute(interaction, client) {
 
-	let embed_text = '__**Liste : **__';
+	let embed_text = '**Liste : **';
 
 	//Recherche les salons configurés pour le serveur
 	setupAutoVoc.forEach((values, key, map) => {

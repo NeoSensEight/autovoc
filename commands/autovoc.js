@@ -56,12 +56,12 @@ async function execute(interaction, client) {
         });
         if(interaction.options.getRole('role_access') === null) {
             interaction.options.getChannel('channel').permissionOverwrites.set([
-                { id : interaction.guild.roles.everyone, allow :  [PermissionsBitField.Flags.ViewChannel] }
+                { id : interaction.guild.roles.everyone, allow :  [PermissionsBitField.Flags.ViewChannel, PermissionsBitField.Flags.Connect] }
             ],'Bloquer le salon pour tout le monde sauf le rôle autorisé')
         } else {
             interaction.options.getChannel('channel').permissionOverwrites.set([
-                { id : interaction.guild.roles.everyone, deny :  [PermissionsBitField.Flags.ViewChannel] },
-                { id : interaction.options.getRole('role_access').id, allow :  [PermissionsBitField.Flags.ViewChannel] }
+                { id : interaction.guild.roles.everyone, deny :  [PermissionsBitField.Flags.ViewChannel, PermissionsBitField.Flags.Connect] },
+                { id : interaction.options.getRole('role_access').id, allow :  [PermissionsBitField.Flags.ViewChannel, PermissionsBitField.Flags.Connect] }
             ],'Bloquer le salon pour tout le monde sauf le rôle autorisé')
         }
         
