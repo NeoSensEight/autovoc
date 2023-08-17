@@ -1,5 +1,13 @@
-const { ChannelType, PermissionsBitField } = require('discord.js')
+const { EmbedBuilder, ChannelType, PermissionsBitField } = require('discord.js')
 const { setupAutoVoc } = require("../utils/enmapUtils");
+const { color_embed,
+    embed_footer_text, 
+    embed_footer_icon,
+    embed_author_name,
+    embed_author_iconUrl,
+    embed_author_url,
+    embed_title_url,
+    embed_thumbnail } = require('../files/config');
 
 async function addSetupCommand(slashCommand) {
     slashCommand.addSubcommand((subcommand) =>
