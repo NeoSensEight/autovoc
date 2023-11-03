@@ -183,7 +183,7 @@ async function handleSelectBan(interaction){
             Connect : false
         })
     });
-    interaction.reply({ content : 'Les personnes ont été éjectés avec succès', ephemeral: true });
+    interaction.reply({ content : 'Les personnes ont été éjectées avec succès', ephemeral: true });
 }
 
 /**
@@ -196,7 +196,7 @@ async function handleSelectPermit(interaction){
             Connect : true
         })
     });
-    interaction.reply({ content : 'Les personnes ont été éjectés avec succès', ephemeral: true });
+    interaction.reply({ content : 'Les personnes ont été autorisées avec succès', ephemeral: true });
 }
 
 
